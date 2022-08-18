@@ -1,6 +1,5 @@
-import requests
+from download import download_csv_to_dict
 
-# This is a HTTP Get call
-response = requests.get('https://gist.githubusercontent.com/chriddyp/feaa84b34854e53fb72a/raw/dbba00aeafb981f0f50014030d1b6ad0399d957d/example-data.csv')
+TEST_CSV_URL='https://gist.githubusercontent.com/chriddyp/feaa84b34854e53fb72a/raw/dbba00aeafb981f0f50014030d1b6ad0399d957d/example-data.csv'
 
-print(response.status_code)
+download_csv_to_dict(TEST_CSV_URL)
